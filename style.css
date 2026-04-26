@@ -1,0 +1,147 @@
+/* Resetting margin iyo padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    /* Midabka madow ee nav-ka */
+    padding: 15px 50px;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff9900;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    /* Muhiim u ah dhibicda */
+}
+
+.cta-button {
+    background-color: #ff9900;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Geesaha wareegsan */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #643d02;
+    transform: scale(1.05);
+    /* Wax yar ayuu weynaadaa marka la dul maro */
+    transition: 0.5s;
+}
+
+.hero-section {
+    /* Waxaan isticmaalnay linear-gradient si aan madowga u saarno sawirka korkiisa */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+        url('image/premium_photo-1661883237884-263e8de8869b.avif');
+    /* Halkan ku beddel magaca sawirkaaga */
+
+    background-size: cover;
+    /* Sawirku inuu buuxiyo qaybta oo dhan */
+    background-position: center;
+    /* Inuu sawirku bartamaha noqdo */
+    height: 80vh;
+    /* 80% oo ah dhererka shaashadda */
+
+    /* Flexbox si aan qoraalka u xaraysano */
+    display: flex;
+    justify-content: center;
+    /* Center horizontal */
+    align-items: center;
+    /* Center vertical */
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.order-btn {
+    padding: 12px 30px;
+    background-color: #ff9900;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.order-btn:hover {
+    background-color: #643d02;
+    transform: scale(1.05);
+    /* Wax yar ayuu weynaadaa marka la dul maro */
+    transition: 0.5s;
+}
+.footer {
+    background-color: #1a1a1a; /* Midabka madow ee footer-ka */
+    color: #ffffff;
+    padding: 60px 0;
+    margin-top: 0px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Waxay samaynaysaa 4 qaybood oo isle'eg */
+    gap: 40px;
+    padding: 10 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    color: #ff9900; /* Midabka orange-ka ah */
+}
+
+.footer-section ul {
+    list-style: none; /* Tirtirida dhibcaha liiska */
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9900;
+}
